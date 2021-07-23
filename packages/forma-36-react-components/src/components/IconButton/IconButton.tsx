@@ -1,4 +1,5 @@
 import React from 'react';
+import type { MouseEventHandler } from 'react';
 import cn from 'classnames';
 import { TabFocusTrap } from '@contentful/f36-utils';
 import { Icon } from '@contentful/f36-icon';
@@ -29,6 +30,7 @@ export interface IconButtonProps
    * It renders a label with the icon, making it look like the naked button
    */
   label?: string;
+  onClick?: MouseEventHandler<HTMLAnchorElement | HTMLButtonElement>;
   /**
    * If true, it will render the Chevron icon to indicate that the button opens a dropdown
    */
